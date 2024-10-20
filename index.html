@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte do Projeto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Meu Portfólio</title>
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("Q4v3R1pBYIFQvIAMQ"); // Chave pública do EmailJS
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Menu -->
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="assets/vector.png" alt="Logo">
+        <h1 class="cabecalho__titulo">Alyson Marian</h1>
+        <nav class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="navegacao__elemento"><a href="#sobre-mim">Sobre mim</a></li>
+                <li class="navegacao__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacao__elemento"><a href="#formacao">Formação</a></li>
+                <li class="navegacao__elemento"><a href="#projetos">Projetos</a></li>
+                <li class="navegacao__elemento"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- <button id="modo-noturno">Modo Noturno</button> -->
+    </header>
+    
+
+    <!-- Seção de Apresentação -->
+    <section class="apresentacao">
+        
+        <img src="assets/eu.png" alt="Imagem de perfil" class="imagem-redonda">
+
+
+        <div class="apresentacao__conteiner">
+            <h2 class="apresentacao__titulo">Olá, meu nome é Alyson marian e construo páginas web</h2>
+            <p class="apresentacao__subtitulo">Sou estudante de Analise e Desenvolvimento de Sistemas e atualmente estou participando do projeto Oracle ONE na Alura Latam.</p>
+            <ul class="redes">
+                <li class="redes__elemento"><a href="https://github.com/amariandev">Github <img src="assets/arrow.png" alt="Seta"></a></li>
+                <li class="redes__elemento"><a href="https://www.linkedin.com/in/alyson-marian/">Linkedin <img src="assets/arrow.png" alt="Seta"></a></li>
+                <li class="redes__elemento"><a href="https://wa.me/5549998404639">WhatsApp <img src="assets/arrow.png" alt="Seta"></a></li>
+                <li class="redes__elemento"><a href="https://portifoliio-gamma.vercel.app/curriculum.html">Currículo <img src="assets/arrow.png" alt="Seta"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção sobre mim -->
+    <section class="sobre-mim" id="sobre-mim">
+        <h2 class="sobre-mim__titulo">Sobre mim</h2>
+        <p class="sobre-mim__texto">
+            Atualmente, trabalho na indústria e sou casado, pai de um menino de 9 anos. Sou um amante de tecnologia e estou em processo de transição de carreira para o setor tecnológico.
+        </p>
+        <p class="sobre-mim__texto">
+            Possuo um bom computador e uma conexão de internet de alta velocidade, o que me permite explorar e aprender novas tecnologias de forma eficiente.
+        </p>
+        <p class="sobre-mim__texto">
+            Minha paixão por tecnologia e meu desejo de crescimento profissional são os motores dessa mudança de carreira.
+        </p>
+    </section>
+    
+        <!-- Assinatura opcional -->
+      
+    </section>
+
+    <!-- Seção de Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/html.png" alt="HTML">
+                <p class="habilidades__nome">HTML 5</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/js_icon.png" alt="JavaScript">
+                <p class="habilidades__nome">JavaScript</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/php_icon.png" alt="PHP">
+                <p class="habilidades__nome">PHP</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/nodejs_icon.png" alt="Node.js">
+                <p class="habilidades__nome">Node.js</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/react_icon.png" alt="React">
+                <p class="habilidades__nome">React</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/css_icon.png" alt="CSS">
+                <p class="habilidades__nome">CSS</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <h2 class="projetos__titulo"> Demonstração de Projetos</h2>
+        <!-- Conteúdo dos projetos -->
+    </section>
+    
+    <ul class="videos__container">
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/HeQel5gLJkw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div class="descricao-video">
+                <img src="./assets/Frame 6.png" alt="Logo do canal Alura Cursos Online">
+                <h3>Jogo do numero secreto</h3>
+                <p>Utizando logica de programação o usuario recebe dicas e tem 4 tentativas</p>
+                
+            </div>
+        </li>
+    
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/wmTBmySvjVM"
+                title="Voltando ao mercado após a maternidade: Ana Silvério" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="descricao-video">
+                <img src="./assets/Frame 6.png" alt="Logo do canal Alura Cursos Online">
+                <h3>Buscador de Bandas de Rock</h3>
+               <p>digite a primeira letra e aparece sugestões de banda</p>
+            </div>
+        </li>
+    
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/8YTg7AueFAg"
+                title="Mercado de Trabalho | Desmistificando Mobile - Episódio 5" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="descricao-video">
+                <img src="./assets/Frame 6.png" alt="Logo do canal Alura Cursos Online">
+                <h3>Encriptador de Palvras</h3>
+                <p>1° Challenge One Alura/ codifica, copia e decodifica palavras.</p>
+            </div>
+        </li>
+    
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/Lr0uAh6kZNI"
+                title="Conhecendo a linguagem Go | Hipsters.Talks" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="descricao-video">
+                <img src="./assets/Frame 6.png" alt="Logo do canal Alura Cursos Online">
+                <h3>Portifolio </h3>
+                <p>Portifolio responsivo com links para redes sociais.</p>
+            </div>
+        </li>
+    </ul>
+    
+   
+    <!-- Seção de Formação Acadêmica -->
+    <section class="formacao" id="formacao">
+        <h2 class="formacao__titulo">Formação Acadêmica</h2>
+        <ul class="formacao__lista">
+            <li class="formacao__elemento">                
+                <div>
+                    <h3 class="formacao__nome">Análise e Desenvolvimentode Sistemas</h3>
+                    <p class="formacao__detalhe">2024 - 2026</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/unifacvest.jpng.jpeg" alt="unifacvest">
+                <div>
+                    <h3 class="formacao__nome">Especialização em FrontEnd</h3>
+                    <p class="formacao__detalhe">2024 -2025  Plataforma Alura</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/alura.jpeg" alt="alura">
+                <div>
+                    <h3 class="formacao__nome">C# Orientada a Objetos</h3>                    
+                    <p class="formacao__detalhe">Em andamento -Plataforma Udemy</p>
+                    <img class="formacao__icone" src="assets/udemy.jpeg" alt="udemy">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section class="" id="">
+        <h2 class="projetos__titulo">
+                        <a href="https://portifoliio-gamma.vercel.app/curriculum.html" target="_blank">
+                Experiência Profissional clique aqui
+            </a>
+        </h2>        
+        
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contato" id="contato">
+        <h2 class="contato__titulo">Contato</h2>
+        <form class="contato__formulario" id="contact-form">
+            <input class="contato__campo" type="text" id="from_name" name="from_name" placeholder="Nome" required>
+            <input class="contato__campo" type="email" id="from_email" name="from_email" placeholder="E-mail" required>
+            <textarea class="contato__campo contato__campo--textarea" id="message" name="message" placeholder="Mensagem" required></textarea>
+            <button class="contato__botao" type="submit">Enviar</button>
+        </form>
+        
+        <p id="status-message"></p>
+    </section>
+
+    <!-- Inclui o arquivo de script -->
+    <script src="script.js"></script>
+</body>
+
+<footer class="container__footer">
+    Desenvolvido por AmarianDev para o Challenge One
+    <a href="https://github.com/amariandev">
+        <img src="./assets/github.png" alt="GitHub" />
+    </a> 
+    
+</footer>
+</html>

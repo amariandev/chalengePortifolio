@@ -1,0 +1,329 @@
+/* Definição de cores e variáveis globais */
+:root { --cor-de-fundo: #121212;
+    --cor-de-fundo-menu: #1f1f1f;
+    --cor-do-link: #FFD700;
+    --cor-texto-principal: #f5f5f5;
+    --cor-texto-secundario: #cccccc;
+   
+}
+/* Modo Noturno */
+body.dark-mode { 
+
+    --cor-de-fundo: #f5f5f5;            
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #5451f9;
+    --cor-texto-principal: #333333;
+    --cor-texto-secundario: #555555;
+}
+
+/* Configurações gerais */
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto-principal);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Links e hover */
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+    gap: 5px;
+}
+
+a:hover {
+    color: #FFD700; /* Cor dourada no hover */
+    cursor: pointer;
+}
+
+/* Listas */
+ol, ul, li {
+    list-style: none;
+}
+
+/* Imagem redonda */
+.imagem-redonda {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.navegacao__lista {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilizando os itens da navegação */
+.navegacao__elemento a {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 2px solid transparent; /* Borda invisível inicialmente */
+    border-radius: 8px; /* Borda arredondada */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover para os links */
+.navegacao__elemento a:hover {
+    border-color: #FFD700; /* Borda dourada ao passar o mouse */
+    background-color: rgba(255, 215, 0, 0.1); /* Fundo com um leve tom dourado */
+    color: #000; /* Cor do texto ao passar o mouse */
+}
+
+/* ------------------------------ Seção Videos ---------------------------------- */
+.videos__container {
+    color: black;
+    padding: 153px 20px 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 150px;
+}
+
+.videos__item {
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;
+    transition: 0.5s;
+}
+
+.videos__item:hover {
+    transform: scale(1.3);
+    background-color: var(--azul-claro);
+    z-index: 2;
+}
+
+/* Descrição do vídeo */
+.descricao-video {
+    margin-top: 1rem;
+    display: grid;
+    text-align: start;
+    column-gap: 1rem;
+    row-gap: 10px;
+    grid-template-columns: auto 1fr;
+}
+
+.descricao-video img {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.descricao-video h3 {
+    grid-area: 1 / 2 / 2 / 3;
+    font-weight: 700;
+    color: var(--cor-texto-principal);
+}
+
+.descricao-video p {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 14px;
+    color: var(--cor-texto-secundario);
+}
+
+/* ------------------------------ Seção de Habilidades ------------------------------ */
+.habilidades {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.habilidades__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.habilidades__elemento {
+    flex: 0 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.habilidades__icone {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.habilidades__nome {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* ------------------------------ Seção de Contato --------------------------------- */
+.contato {
+    margin: 0 auto;
+    max-width: 600px; /* Largura máxima da seção de contato */
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Cor de fundo da seção */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contato__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor-texto-principal);
+    margin-bottom: 1.5rem;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato {
+    margin: 0 auto;
+    max-width: 600px; /* Largura máxima da seção de contato */
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--cor-de-fundo-menu); /* Cor de fundo da seção */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contato__campo {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #555; /* Cor de borda no modo noturno */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--cor-texto-principal); /* Cor do texto no modo noturno */
+    background-color: #1f1f1f; /* Cor de fundo do campo de entrada no modo noturno */
+}
+
+.contato__campo--textarea {
+    height: 150px; /* Altura específica para o textarea */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.contato__botao {
+    background-color: #5451f9;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato__botao:hover {
+    background-color: #333; /* Cor ao passar o mouse no botão */
+}
+
+#status-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #5451f9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato {
+        padding: 1.5rem;
+    }
+    
+    .contato__titulo {
+        font-size: 1.75rem;
+    }
+
+    .contato__campo {
+        font-size: 0.95rem;
+    }
+
+    .contato__botao {
+        font-size: 1rem;
+    }
+}
+
+.container__footer {
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(71, 14, 242);
+    border-radius: 1.87rem;
+    margin-top: auto;
+}
+
+/* ------------------------------ Responsividade --------------------------------------- */
+
+/* Tablets e telas maiores */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+        text-align: left; /* Alinha o título à esquerda */
+        margin: 0;
+    }
+
+    .navegacao__lista {
+        flex-direction: row;
+        gap: 10px; /* Reduz o espaçamento entre os itens da navegação */
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem; /* Reduz o tamanho da fonte nos links */
+    }
+}
+
+/* Responsividade para telas menores, como smartphones */
+@media (max-width: 480px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem; /* Ainda menor para smartphones */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .cabecalho__logo {
+        max-width: 50px; /* Ajuste adicional no tamanho do logo */
+    }
+
+    .navegacao__lista {
+        flex-direction: column; /* Muda a navegação para coluna em telas muito pequenas */
+        gap: 10px; /* Aumenta o espaço entre os itens */
+    }
+}
+
+/* Outros estilos... */
