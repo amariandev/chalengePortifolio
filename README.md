@@ -19,4 +19,4 @@ Este projeto é uma demonstração das habilidades que adquiri durante meu apren
 
 1. Clone este repositório:
    ```bash
-   git clone https://
+   git clone https://github.com/amariandev/chalengePortifolio.git
